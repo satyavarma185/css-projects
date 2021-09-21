@@ -1,0 +1,43 @@
+body {
+	background: linear-gradient(rgba(235, 135, 4, 0.7),rgba(0,0,0,0.3));
+    height: 81vh;
+}
+h2 {
+	font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-size: 2.5rem;
+    color: rgb(247, 247, 250);
+    text-shadow: 2px 2px 10px black;
+    text-align: center;
+    margin-top: 100px;
+}
+.tdimension {
+	width: 300px;
+	height: 300px;
+	margin: 20px auto 40px auto;
+	perspective: 1000px;
+}
+.tdimension a {
+	display: block;
+	width: 100%;
+	height: 100%;
+	background: url("https://media.istockphoto.com/vectors/positive-inspirational-quote-vector-id579263188");
+	background-size:cover;
+	background-position: center;
+	transform-style: preserve-3d;
+	transform: rotateX(80deg);
+	transition: all 0.8s;	
+}
+.tdimension:hover a {
+	transform: rotateX(20deg); 
+}	
+.tdimension a:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1));    
+   	transform: rotateX(90deg);
+    transform-origin: bottom;
+}
